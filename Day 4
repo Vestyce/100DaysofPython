@@ -1,0 +1,10 @@
+#Remember to use the random module
+#Hint: Remember to import the random module here at the top of the file. 🎲
+	 
+#Write the rest of your code below this line 👇
+import random
+coinflip = random.randint(1,2)
+if coinflip == 1:
+    print("heads")
+elif coinflip == 2:
+    print("tails")
