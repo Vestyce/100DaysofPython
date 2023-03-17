@@ -75,24 +75,14 @@ user_pick = int(input("What do you choose? Type 0 for Rock, 1 for Paper, 2 for S
 
 if user_pick >= 3:
   print("Your choice is invalid, try again")
-  
 
-if user_pick == 0:
-  print(rock)
-elif user_pick == 1:
-  print(paper)
-elif user_pick == 2:
-  print(scissors)
+game_image = [rock, paper, scissors]
+print(game_image[user_pick])
 
 
 opponent_pick = random.randint(0,2)
 print(f"Opponent chose {opponent_pick}")
-if opponent_pick == 0:
-  print(rock)
-elif opponent_pick == 1:
-  print(paper)
-elif opponent_pick == 2:
-  print(scissors)
+print(game_image[opponent_pick])
 
 if user_pick == 0 and opponent_pick == 1:
   print("You lost")
